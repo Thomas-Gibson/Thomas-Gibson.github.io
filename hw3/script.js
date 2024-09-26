@@ -1,4 +1,10 @@
-//"use strict";
+/* 
+  Name: Thomas Gibson
+  Date: 09.25.2024
+  CSC 372-01
+
+  This is the source file for index.html and plan.html.
+*/
 
 
 let food_image = document.querySelectorAll(".unselected");
@@ -13,6 +19,11 @@ for (i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", addFood);
 }
 
+/**
+ * When the user selects an image the image style will change to indicate it was selected.
+ * Text will display describing the dish.
+ * @param {*} event 
+ */
 function makeBig(event) {
 
         const target = event.currentTarget;
@@ -38,6 +49,10 @@ function makeBig(event) {
 let total_cost = 0.0;
 const costDisplay = document.getElementById("cost_display");
 
+/**
+ * Puts a food item in the users list and sums the cost of all items as they are added.
+ * @param {*} event 
+ */
 function addFood(event) {
         const target = event.currentTarget;
         const selections = document.getElementById("selections");
@@ -59,6 +74,9 @@ function addFood(event) {
         console.log(cost);
 }
 
+/**
+ * Rmoves a food item from the users list.
+ */
 function removeFood(event) {
         const target = event.currentTarget;
 
@@ -68,21 +86,3 @@ function removeFood(event) {
         costDisplay.textContent = total_cost;
         target.remove();
 }
-
-// let addButton = document.querySelector("#add-btn ");
-
-// addButton.addEventListener("click", function () {
-
-//         let num1 = parseInt(document.querySelector("#first").value);
-//         let num2 = parseInt(document.querySelector("#second").value);
-//         let res = num1 + num2;
-//         let resultDiv = document.querySelector("#result");
-//         resultDiv.textContent = num1 + " + " + num2 + " = " + res;
-
-// });
-
-// var boxBtn = document.getElementById("random-btn");
-// boxBtn.addEventListener("click", boxFunction);
-// function boxFunction() {
-//         console.log("this in event handler:" + this)
-// }
