@@ -1,0 +1,42 @@
+/* 
+Thomas Gibson 
+10.20.2024 
+
+Style sheet for the index page.
+*/
+
+section {
+
+    border: black solid 1px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.selected {
+    border: red solid 1px;
+}
+
+img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#result-feild div {
+    width: 60%;
+    justify-content: space-between;
+}

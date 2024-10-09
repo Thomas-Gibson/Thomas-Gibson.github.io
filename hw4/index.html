@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- 
+Thomas Gibson
+10.20.2024
+ 
+HTML page for a rock, paper, scissor interface.
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Player Box -->
+    <section id="player-feild">
+        <div>
+            <img src="images/rock.PNG" alt="Rock" value="Rock">
+            <img src="images/paper.PNG" alt="Paper" value="Paper">
+            <img src="images/scissors.PNG" alt="Scissors" value="Scissor">
+        </div>
+
+        <h1>Your Throw</h1>
+    </section>
+
+    <!-- Computer Box -->
+    <section id="computer-feild">
+        <div>
+            <img src="images/question-mark.PNG" alt="Unknown">
+        </div>
+        <h1>Computer Throw</h1>
+    </section>
+
+    <!-- Results -->
+    <section id="result-feild">
+        <div>
+            <p><b>Result: </b> <span id="result"></span></p>
+            <ul>
+                <li>Wins: <span id="wins"></span></li>
+                <li>Ties: <span id="ties"></span></li>
+                <li>Losses: <span id="losses"></span></li>
+            </ul>
+        </div>
+
+        <button class="disabled" value="disabled">Play Again</button>
+    </section>
+</body>
+
+</html>
